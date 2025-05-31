@@ -10,7 +10,7 @@ app = Flask(__name__)
 scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
 creds = ServiceAccountCredentials.from_json_keyfile_name("service_account.json", scope)
 client = gspread.authorize(creds)
-sheet = client.open("OrdersSheet").sheet1  # Change this to your sheet name
+sheet = client.open("OrdersSheet").sheet  # Change this to your sheet name
 
 # === WhatsApp Webhook Verification ===
 VERIFY_TOKEN = "my_verify_token_123"  # You can set this to anything, remember it!
