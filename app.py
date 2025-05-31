@@ -16,7 +16,7 @@ WORKSHEET_NAME = "Orders"
 YOUR_EMAIL = "sivasakthisupermartpteltd@gmail.com" # Your email for spreadsheet access
 
 # Path to the service account JSON file
-SERVICE_ACCOUNT_FILE = "/etc/secrets/service_account.json"
+GOOGLE_SERVICE_ACCOUNT_JSON = "/etc/secrets/service_account.json"
 if not SERVICE_ACCOUNT_JSON:
     app.logger.error("GOOGLE_SERVICE_ACCOUNT_JSON environment variable not set")
     SERVICE_ACCOUNT_INFO = None
