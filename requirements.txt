@@ -1,1 +1,3 @@
-flask
+Flask
+gspread
+oauth2client
