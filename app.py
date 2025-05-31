@@ -10,7 +10,7 @@ app = Flask(__name__)
 app.logger.setLevel(logging.INFO)
 
 # Configurations
-VERIFY_TOKEN = os.getenv("sivasakthiNo1", "DEFAULT_SECRET_TOKEN")
+VERIFY_TOKEN = os.getenv("WHATSAPP_VERIFY_TOKEN", "sivasakthiNo1")
 SPREADSHEET_NAME = "OrdersSheet"
 WORKSHEET_NAME = "Orders"
 YOUR_EMAIL = "sivasakthisupermartpteltd@gmail.com" # Your email for spreadsheet access
